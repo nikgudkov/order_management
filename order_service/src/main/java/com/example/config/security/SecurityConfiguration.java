@@ -1,6 +1,3 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License.
-
 package com.example.config.security;
 
 import org.springframework.beans.factory.annotation.Autowired;

@@ -5,8 +5,7 @@
         </encoder>
     </appender>
 
-    <!--  TODO should be configured properly afterwards-->
-    <root level="debug">
+    <root level="info">
         <appender-ref ref="STDOUT"/>
     </root>
 </configuration>

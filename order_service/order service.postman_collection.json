@@ -1,0 +1,206 @@
+{
+  "info": {
+    "_postman_id": "ea18b0db-8806-42f2-b3e9-6c4f956fcb77",
+    "name": "order service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "https://localhost:8443/order",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:8443/order",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "8443",
+          "path": [
+            "order"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://localhost:8443/order",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"totalPrice\": 1,\r\n    \"id\" : 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:8443/order",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "8443",
+          "path": [
+            "order"
+          ],
+          "query": [
+            {
+              "key": "totalPrice",
+              "value": "11.2234",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://localhost:8443/order",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"totalPrice\": 3.1666\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:8443/order",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "8443",
+          "path": [
+            "order"
+          ],
+          "query": [
+            {
+              "key": "totalPrice",
+              "value": "11.2234",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "tokenType",
+        "value": "Bearer",
+        "type": "string"
+      },
+      {
+        "key": "accessToken",
+        "value": "eyJ0eXAiOiJKV1QiLCJub25jZSI6ImZzTmsxZmZZTVJWc1liNXlxQ0RtTmN3TzlQS1FmTmFsYnZVTUxySUVXNGsiLCJhbGciOiJSUzI1NiIsIng1dCI6ImtnMkxZczJUMENUaklmajRydDZKSXluZW4zOCIsImtpZCI6ImtnMkxZczJUMENUaklmajRydDZKSXluZW4zOCJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwMDAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9jZDBjZWZlYi1mOWE4LTRkMWEtOGM1OS04OWY2MWI5YjhiYjIvIiwiaWF0IjoxNjA0ODM3Nzc2LCJuYmYiOjE2MDQ4Mzc3NzYsImV4cCI6MTYwNDg0MTY3NiwiYWNjdCI6MCwiYWNyIjoiMSIsImFpbyI6IkUyUmdZT2hpVXVubnZUcjlqZjZLdWNyblZuRjN5SHlRT083VWRzVzQ1L0JjSWMvRnI2UUEiLCJhbXIiOlsicHdkIl0sImFwcF9kaXNwbGF5bmFtZSI6InNwcmluZy1zZWN1cml0eS13ZWItYXBwIiwiYXBwaWQiOiI3OGQzODFiZi0wOWI1LTRjOGQtOGFmZC03OGMxNTljZjdlNTciLCJhcHBpZGFjciI6IjEiLCJpZHR5cCI6InVzZXIiLCJpcGFkZHIiOiIyMTIuOTAuNjEuNDUiLCJuYW1lIjoiTmlraXRhIiwib2lkIjoiY2NiNWViZDUtNGFlNy00YTgyLTkyYWItODI4MzUyZTZlMWU1IiwicGxhdGYiOiIzIiwicHVpZCI6IjEwMDMyMDAwRjU2Q0JDNEYiLCJyaCI6IjAuQUFBQTYtOE16YWo1R2syTVdZbjJHNXVMc3ItQjAzaTFDWTFNaXYxNHdWblBmbGQxQUNFLiIsInNjcCI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lnbmluX3N0YXRlIjpbImttc2kiXSwic3ViIjoiS0g5ZS1RTElfZnVLdjA0YWVtRjRmcHBSMlVoY0tZTVI1T0hPb0hiNTNwVSIsInRlbmFudF9yZWdpb25fc2NvcGUiOiJOQSIsInRpZCI6ImNkMGNlZmViLWY5YTgtNGQxYS04YzU5LTg5ZjYxYjliOGJiMiIsInVuaXF1ZV9uYW1lIjoidGVzdEBuaWtpdGFndWRrb3Yub25taWNyb3NvZnQuY29tIiwidXBuIjoidGVzdEBuaWtpdGFndWRrb3Yub25taWNyb3NvZnQuY29tIiwidXRpIjoiTnJpS0Rmc1M1RUdQSHlxeVZNbFNBUSIsInZlciI6IjEuMCIsIndpZHMiOlsiYjc5ZmJmNGQtM2VmOS00Njg5LTgxNDMtNzZiMTk0ZTg1NTA5Il0sInhtc19zdCI6eyJzdWIiOiJmTUdBM2RNak9ac1F1RTBMTHlQOUdoQ3ZIRzBMbmlwc0ZQNlRtMGJ1R1FnIn0sInhtc190Y2R0IjoxNjA0NzM4MjcwfQ.gxEDb1AfDmt7bsoJXmzUFfxDvZyNVN8yAS_Z57CTXdG9BZsciV6Hq0TTeJU2TKobIy0GW14UE1eZ5R6ML3YwF-ug7grzooTIWKHC0V1xsCZJLuIv6jyeiUqTUkHuRQJ2E1YLKq59Cn_y8w1VZjihuow1pjwTO7OwxVB6YIrg0OD-YHBi3JYZt8PpvYkrlSKjTnNS8t7lLWjMjTkLII83ITCHAU4UvR1kvpSNaHjkb8Bw89VJbfbqGtpzNXVdhcmfZKKCa1WKr2guB2jCNoDSgGYOLZs7ij1sXuNtjV38DKGjQU9cGKZTrJWtUOV3aXKYLsdAly3NfFtyk4_IForlIw",
+        "type": "string"
+      },
+      {
+        "key": "headerPrefix",
+        "value": "Bearer",
+        "type": "string"
+      },
+      {
+        "key": "redirect_uri",
+        "value": "https://localhost:8443/login",
+        "type": "string"
+      },
+      {
+        "key": "useBrowser",
+        "value": false,
+        "type": "boolean"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+        "type": "string"
+      },
+      {
+        "key": "scope",
+        "value": "openid profile",
+        "type": "string"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+        "type": "string"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code",
+        "type": "string"
+      },
+      {
+        "key": "username",
+        "value": "test@nikitagudkov.onmicrosoft.com",
+        "type": "string"
+      },
+      {
+        "key": "password",
+        "value": "Wowrus222!",
+        "type": "string"
+      },
+      {
+        "key": "client_authentication",
+        "value": "header",
+        "type": "string"
+      },
+      {
+        "key": "clientSecret",
+        "value": "-B~l~NM6~~4pI-t4R_4kaUE_z1CveW0jxm",
+        "type": "string"
+      },
+      {
+        "key": "clientId",
+        "value": "78d381bf-09b5-4c8d-8afd-78c159cf7e57",
+        "type": "string"
+      },
+      {
+        "key": "tokenName",
+        "value": "active directory",
+        "type": "string"
+      },
+      {
+        "key": "addTokenTo",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "0ec2233b-76a9-4d01-bf6f-973e25754e9b",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "db2da401-2a2e-4d72-8008-c1fae1cd1257",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "protocolProfileBehavior": {}
+}

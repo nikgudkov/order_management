@@ -1,5 +1,7 @@
 package com.example.config;
 
+import com.example.messaging.GenericJmsProducer;
+import com.example.messaging.OrderJmsProducer;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,11 +21,19 @@ public class MessagingConfig {
     @Value("${spring.activemq.password}")
     private String password;
 
+    @Value("${messaging.queue.order-updated.name}")
+    private String orderUpdatedQueueName;
+
+
     @Bean
     public ActiveMQConnectionFactory connectionFactory() {
         System.setProperty("org.apache.activemq.SERIALIZABLE_PACKAGES", "*");
         return new ActiveMQConnectionFactory(user, password, brokerUrl);
     }
 
+    @Bean
+    public OrderJmsProducer orderJmsProducer(GenericJmsProducer genericJmsProducer) {
+        return new OrderJmsProducer(genericJmsProducer, orderUpdatedQueueName);
+    }
 
 }

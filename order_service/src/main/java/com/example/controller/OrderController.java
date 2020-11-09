@@ -20,9 +20,9 @@ import java.util.List;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RestController
-@RequestMapping(OrdersController.ORDER_CONTROLLER_ENDPOINT)
+@RequestMapping(OrderController.ORDER_CONTROLLER_ENDPOINT)
 @Api(consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE, tags = "CRUD operations with orders")
-public class OrdersController {
+public class OrderController {
 
     public static final String ORDER_CONTROLLER_ENDPOINT = "/order";
 
@@ -30,7 +30,7 @@ public class OrdersController {
 
     private final OrderService orderService;
 
-    public OrdersController(OrderService orderService) {
+    public OrderController(OrderService orderService) {
         this.orderService = orderService;
     }
 

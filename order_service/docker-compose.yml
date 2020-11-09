@@ -1,0 +1,18 @@
+version: "3.3"
+services:
+  activemq:
+    image: rmohr/activemq:5.15.9
+    ports:
+      - 61616:61616
+      - 8161:8161
+    expose:
+      - 61616
+  mysql:
+    image: mysql:8.0.22
+    ports:
+      - 3306:3306
+    expose:
+      - 3306
+    environment:
+      - MYSQL_DATABASE=orders
+      - MYSQL_ROOT_PASSWORD=root

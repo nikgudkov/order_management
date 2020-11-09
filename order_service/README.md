@@ -1,9 +1,9 @@
 
-Swagger:
+###### Swagger:
 
 http://localhost:8081/swagger-ui/
 
-Development tips:
+###### Running:
 
 To run application locally in dev mode add to VM arguments following line substituting the stubs:
 
@@ -17,7 +17,7 @@ Run mysql and activemq locally in a docker:
 
 or run `docker-compose up`
 
-Build an image:
+###### Build an image:
 
 `mvn clean package`
 

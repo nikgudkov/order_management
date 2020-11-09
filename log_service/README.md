@@ -1,5 +1,5 @@
 
-Development tips:
+###### Running:
 
 Run mysql activemq locally in a docker:
 
@@ -7,7 +7,7 @@ Run mysql activemq locally in a docker:
 
 or run `docker-compose up`
 
-Build an image:
+###### Build an image:
 
 `mvn clean package`
 

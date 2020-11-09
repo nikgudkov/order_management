@@ -1,6 +1,8 @@
 
-Small task showing spring boot integration with Azure Active Directory, Mysql and ActiveMq.
+Small task showing spring boot integration with Azure Active Directory, MySQL and ActiveMQ.
 
+Order service provides CRUD operations on orders, while log service listens on ActiveMQ queue 
+whether there any updates on the orders and logs them.
 ###### Running:
 
 Substitute following parameters in `docker-compose.yml` with your Active Directory values:
